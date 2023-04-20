@@ -11,10 +11,16 @@ public class PasswordControllerUnitTest
     }
 
     [Fact]
-    public void RetrievingPassword()
+    public void CheckingPasswordWithRightPassword()
     {
         const string pw = "Test";
         Assert.True(PasswordController.Verify(pw, PasswordController.Hash(pw)));
+    }
+    
+    [Fact]
+    public void CheckingPasswordWithWrongPassword()
+    {
+        Assert.False(PasswordController.Verify("NotTest", PasswordController.Hash("Test")));
     }
 
     [Fact]
