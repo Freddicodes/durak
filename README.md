@@ -21,6 +21,7 @@ ich bin der josh und ich bin auch mit dabei
 - [ ] Nach Match Ende: Weiter oder Ende
 - [ ] Passwörter werden gehasht gespeichert
 - [ ] Nutzernamen sind einzigartig
+- [x] Passwörter hashen
 
 ## Tech Stack
 
